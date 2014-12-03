@@ -19,7 +19,7 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="ParseDicom" >
-                <param name="android-package" value="com.sqilline.cordova.dicom"/>
+                <param name="android-package" value="com.sqilline.cordova.dicom.ParseDicom"/>
             </feature>
         </config-file>
 

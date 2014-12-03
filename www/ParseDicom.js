@@ -1,4 +1,4 @@
-var dicomParser = {
+var dicom = {
 	createEvent: function() {
 		alert("ASDASD");
 		var successCallback = alert(1);
@@ -7,4 +7,4 @@ var dicomParser = {
 	}
 }
 
-module.exports = dicomParser;
+module.exports = dicom;

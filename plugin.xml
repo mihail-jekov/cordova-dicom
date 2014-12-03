@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:rim="http://www.blackberry.com/ns/widgets"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="org.apache.cordova.device"
+    version="0.2.12">
+    <name>ParseDicom</name>
+    <description>Sqilline Dicom Plugin</description>
+    <license>MIT</license>
+    <keywords>dicom</keywords>
+
+    <js-module src="www/ParseDicom.js" name="ParseDicom">
+        <clobbers target="window.dicom" />
+    </js-module>
+   
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ParseDicom" >
+                <param name="android-package" value="com.sqilline.cordova.device"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/ParseDicom.java" target-dir="src/com/sqilline/cordova/dicom" />
+    </platform>
+
+</plugin>
